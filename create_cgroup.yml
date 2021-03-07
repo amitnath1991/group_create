@@ -1,0 +1,7 @@
+---
+- name: cgroup creation
+  hosts: localhost
+  become: true
+  tasks:
+    - raw: cgcreate -a bob:bob -t bob:bob -g cpuacct,memory,pids:ex447_stats
+      
