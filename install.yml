@@ -5,5 +5,4 @@
     - name: install ftp server
       yum:
         name: vsftpd
-        state: started
-        enabled: yes
+        state: installed
